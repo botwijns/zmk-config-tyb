@@ -1,0 +1,16 @@
+if SHIELD_TYB_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "tyb"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_TYB_LEFT
+
+if SHIELD_TYB_LEFT || SHIELD_TYB_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_TYB_LEFT || SHIELD_TYB_RIGHT
